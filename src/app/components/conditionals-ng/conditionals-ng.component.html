@@ -1,0 +1,10 @@
+<div class="classes">
+    <div class="button">
+        <button (click)
+        ="showCanShow()"> Mostrar</button>
+    </div>
+    <div *ngIf="canShow">Estamos mostrando isso por que foi permitido!</div>
+
+    <h2 *ngIf="name === 'Gustavo'; else namNotFound">Ola meu nome é {{name}}</h2>
+    <ng-template></ng-template>
+</div>
